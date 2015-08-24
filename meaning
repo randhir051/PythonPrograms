@@ -1,0 +1,13 @@
+#!/usr/bin/python
+
+from nltk.corpus import wordnet
+word = "set"
+syn = wordnet.synsets(word)
+if len(syn) == 0 :
+	print "OH NO, "+word+" does not exist!"
+else :
+	print ("\nHere are all the possible meanings of "+word)
+	for meaning in syn:
+		print "\n"+meaning.definition()
+
+	print "\n"
