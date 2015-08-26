@@ -54,5 +54,5 @@ def SequentialSearch(items,key):
 		i=i+1
 	return -1
 
-def Palindrome(item):
-	return item==reversed(item)
+def MergeSOrt(items):
+	
